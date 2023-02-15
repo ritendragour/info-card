@@ -13,10 +13,10 @@ body{
 .container{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     min-height: 80vh;
     outline: 3px solid yellow;
-    padding: 0px 30px;
+    padding: 0px 50px;
 }
 form{
     width: 40%;
@@ -43,11 +43,14 @@ label{
 h3{
     padding-top: 10px;
 }
-@media (max-width:971px) {
+@media (max-width:981px) {
+    img{
+        display: none;
+    }
    .container{
     height: 85vh;
    }
-  }
+}
 @media (max-width:800px) {
   #ans{
     padding: 50px 10px;
@@ -61,9 +64,6 @@ h3{
         margin: 0px;
         padding: 0px;
         outline: none;
-    }
-    img{
-        display: none;
     }
     form ,#ans{
         width: 100%;
