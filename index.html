@@ -10,21 +10,22 @@
     <link rel="stylesheet" href="style.css">
     <title>Info card</title>
 </head>
+
 <body>
     <h1 class="text-center pt-5 pb-2 text-light"><u>Info Card</u></h1>
-    <div class="container">
-        <div id="ans" style="display: none;">
-            <h1 class="text-center"><u>Conatct</u></h1>
-        </div>
+    <div class="container" id="container">
         <form>
             <label for="fname">Full name</label>
-            <input type="text" id="fname" class="form-control" minlength="10" required>
-            <label for="email">E- Mail</label>
-            <input type="email" id="email" class="form-control" minlength="20" required>
-            <label for="tel">Mobile number</label>
-            <input type="tel" id="tel" class="form-control" maxlength="10" required>
-            <label for="relation">Relation</label>
-            <select id="relation" class="form-control" required>
+             <input type="text" id="fname" class="form-control" minlength="10" >
+           
+             <label for="email">E- Mail</label>
+             <input type="email" id="email" class="form-control" minlength="20" >
+           
+             <label for="tel">Mobile number</label>
+             <input type="tel" id="tel" class="form-control" maxlength="10" >
+           
+             <label for="relation">Relation</label>
+              <select id="relation" class="form-control">
                 <option selected disabled>Select Relation</option>
                 <option value="Friend">Friend</option>
                 <option value="Family">Family</option>
@@ -36,7 +37,10 @@
                 <button class="btn btn-primary mt-2 btn-lg" onclick="clearFun()" style="display: none">Clear</button>
             </span>
         </form>
-        <img src="./img/tel.jpg" alt="" width="25%">
+        <div id="ans" style="display: none;">
+            <h1 class="text-center"><u>Conatct</u></h1>
+        </div>
+        <!-- <img src="./img/tel.jpg" alt="telephone image" width="25%"> -->
     </div>
     <script src="./main.js"></script>
 </body>
