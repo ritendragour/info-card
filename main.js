@@ -7,7 +7,6 @@ let relation = document.getElementById('relation')
 //show hide selector
 const ans = document.getElementById('ans')
 const button = document.querySelector('button:nth-child(2)')
-// const img = document.querySelector('img')
 const container = document.querySelector('#container')
 
 //form tag
@@ -20,16 +19,12 @@ function subFun(e) {
     container.style.Height ="auto"
     ans.style.display = "block"
     button.style.display = "block"
-    // img.style.display = "none"
 
     //window stop
     e.preventDefault()
 
     //count p tag in page
     let ID = document.querySelectorAll('b').length
-
-    // condition call button less then one 
-    // if (removeClass < 1) {
 
         // ID
         var outputID = document.createElement('b')
@@ -88,10 +83,6 @@ function subFun(e) {
 
         //form reset
         form.reset()
-    // } else {
-    //     // condition call button more then one
-    //     alert("You can't add more than One . If you want to add more please press clear button")
-    // }
 }
 
     ans.addEventListener('click' ,(e)=>{
@@ -100,7 +91,6 @@ function subFun(e) {
             ans.removeChild(deleteInfo)
         } 
     } )
-// let btnX = document.querySelector('button')
 
 // Refresh page
 function clearFun() {
