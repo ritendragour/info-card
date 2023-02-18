@@ -1,14 +1,17 @@
+ @import url('https://fonts.googleapis.com/css2?family=Gajraj+One&family=Labrada:ital,wght@0,100;1,100&family=Mynerve&family=Roboto:ital,wght@0,100;0,300;0,700;1,100&family=Shantell+Sans:ital,wght@0,300;1,300;1,600&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-   background-image: url(./img/home.jpg);
+.main{
+   background-image: url(./img/home.jpg);   
    opacity: 1;
-   background-position: center;
+   background-position: center; 
    background-size: cover;
+   background-color: aqua;
    color: white;
+   font-size: 25px;
 }
 .container{
     display: flex;
@@ -17,11 +20,26 @@ body{
     justify-content: center;
     min-height: 80vh;
     border: 3px solid yellow;
-    /* padding: 0px 50px; */
+}
+.btnSection{  
+    margin-top: 40px;
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 form{
     width: 40%;
     margin-top: 40px;
+}
+form button{
+    width: 40%;
+}
+input{
+    margin-bottom: 5px;
+}
+h3{
+    padding-top: 10px;
 }
 #ans{
     background-color: rgba(137, 124, 124,0.6);
@@ -33,18 +51,6 @@ form{
 span{
     display: flex;
     justify-content: space-between;
-}
-button{
-    width: 40%;
-}
-input{
-    margin-bottom: 5px;
-}
-label{
-    font-size: 20px;
-}
-h3{
-    padding-top: 10px;
 }
 .topLine{
     border-top: 1px solid black;

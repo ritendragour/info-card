@@ -12,35 +12,47 @@
 </head>
 
 <body>
-    <h1 class="text-center pt-5 pb-2 text-light"><u>Info Card</u></h1>
-    <div class="container" id="container">
-        <form>
-            <label for="fname">Full name</label>
-             <input type="text" id="fname" class="form-control" minlength="10" required>
-           
-             <label for="email">E- Mail</label>
-             <input type="email" id="email" class="form-control" minlength="20" required>
-           
-             <label for="tel">Mobile number</label>
-             <input type="tel" id="tel" class="form-control" maxlength="10" required>
-           
-             <label for="relation">Relation</label>
-              <select id="relation" class="form-control">
-                <option selected disabled>Select Relation</option>
-                <option value="Friend">Friend</option>
-                <option value="Family">Family</option>
-                <option value="Office">Office</option>
-                <option value="Other">Other</option>
-            </select>
-            <span>
-                <button type="submit" class="btn btn-primary mt-2 btn-lg">Add</button>
-                <button class="btn btn-primary mt-2 btn-lg" onclick="clearFun()" style="display: none">Clear</button>
-            </span>
-        </form>
-        <div id="ans" style="display: none;">
-            <h1 class="text-center"><u>Conatct</u></h1>
+    <div class="main">
+        
+        <h1 class="text-center pt-5 pb-2"><u>Info Card</u></h1>
+        <div class="container" id="container">
+            <div class="btnSection">
+                <button class="btn btn-primary" onclick="backgroundColorChange()">BG Color Change</button>
+                <button class="btn btn-primary" onclick="backgroundImageChange()">BG Image Change</button>
+                <button class="btn btn-primary" onclick="fontColorChange()">Font Color Change</button>
+                <button class="btn btn-primary" onclick="fontDesignChange()">Font Design Change</button>
+                <button class="btn btn-primary" onclick="fontColorSize()">Font Color Size</button>
+                <button class="btn btn-primary" onclick="clearFun()">Page Clear</button>
+            </div>
+            <form>
+                <label for="fname" id="label">Full name</label>
+                <input type="text" id="fname" class="form-control" minlength="10">
+
+                <label for="email" id="label">E- Mail</label>
+                <input type="email" id="email" class="form-control" minlength="20">
+
+                <label for="tel" id="label">Mobile number</label>
+                <input type="tel" id="tel" class="form-control" maxlength="10">
+
+                <label for="relation" id="label">Relation</label>
+                <select id="relation" class="form-control">
+                    <option selected disabled>Select Relation</option>
+                    <option value="Friend">Friend</option>
+                    <option value="Family">Family</option>
+                    <option value="Office">Office</option>
+                    <option value="Other">Other</option>
+                </select>
+                <span>
+                    <button type="submit" class="btn btn-primary mt-2 btn-lg">Add</button>
+                    <button class="btn btn-primary mt-2 btn-lg" onclick="clearFun()"
+                        style="display: none">Clear</button>
+                </span>
+            </form>
+            <div id="ans" style="display: none;">
+                <h1 class="text-center"><u>Conatct</u></h1>
+            </div>
+            <!-- <img src="./img/tel.jpg" alt="telephone image" width="25%"> -->
         </div>
-        <!-- <img src="./img/tel.jpg" alt="telephone image" width="25%"> -->
     </div>
     <script src="./main.js"></script>
 </body>

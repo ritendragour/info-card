@@ -29,7 +29,8 @@ function subFun(e) {
         // ID
         var outputID = document.createElement('b')
         outputID.innerText = '\n\nID : ' +(ID+1) 
-        outputID.id = 'removebtn '
+        outputID.id = ID+1
+        outputID.className = 'removebtn '
         ans.appendChild(outputID)
 
         //Cancel Button
@@ -88,14 +89,58 @@ function subFun(e) {
     ans.addEventListener('click' ,(e)=>{
         if(e.target.className.includes("float-end")){
             let deleteInfo = e.target.parentElement
+            // console.log(deleteInfo)
             ans.removeChild(deleteInfo)
         } 
     } )
 
-// Refresh page
+//main container
+var bg = document.querySelector('.main')
+
+//Color Array
+const colorChange = ["white", "red", "black", "green","brown", "#ff007f","black","white", "#08e8de", "#004225","#a52a2a","black","white", "#ed872d","#fff6000","#eb4c42","#b2ffff"];
+
+//Change background Color
+function backgroundColorChange(){
+    bg.style.backgroundImage = "none";
+    let ramdomColor = colorChange[(Math.round(Math.random() *18))]
+    bg.style.backgroundColor = ramdomColor
+}   
+
+// Change Background Image
+function backgroundImageChange(){
+    if(window.confirm('Are you want change background Image ? \nNOTE: You can only change one time \n Suggestion: If you wanna change again so please first press clear button and change background image')){
+    // let title = prompt('Please Enter background tittle')
+    bg.style.backgroundColor = "none";
+    // let bgURl = 'https://source.unsplash.com/random/900×700/?bike'
+    bg.style.backgroundImage = "url('https://source.unsplash.com/random/900×700/?bike')";
+    // console.log(bgURl);
+}
+}
+
+//Change font color
+function fontColorChange(){  
+    let ramdomColor = colorChange[(Math.round(Math.random() *18))]
+    bg.style.color = ramdomColor
+}
+
+//Change font design
+function fontDesignChange(){ 
+    const ff =['Gajraj One, cursive','Labrada, serif','Mynerve, cursive','Roboto, sans-serif','Shantell Sans, cursive'] 
+    let ramdomFont = ff[(Math.round(Math.random() *4))]
+        bg.style.fontFamily = ramdomFont
+    }
+//Change font size
+function fontColorSize(){ 
+    // const ff =['Gajraj One, cursive','Labrada, serif','Mynerve, cursive','Roboto, sans-serif','Shantell Sans, cursive'] 
+    // let ramdomFont = ff[(Math.round(Math.random() *4))]
+    // console.log(ramdomFont);
+    let Size = prompt('Enter Size in px (Default : size 25px)')
+        bg.style.fontSize = Size+"px"
+    }
+
+    // Refresh page
 function clearFun() {
     alert('Now page is Clear')
     location.reload()
 }
-
-
