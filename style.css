@@ -11,20 +11,21 @@
    background-size: cover;
    background-color: aqua;
    color: white;
-   font-size: 25px;
+   font-size: 20px;
 }
 .container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 80vh;
+    min-height: 85vh;
     border: 3px solid yellow;
 }
 .btnSection{  
-    margin-top: 40px;
+    margin: 20px 0px;
+    padding: 0px 40px;
     display: flex;
-    width: 80%;
+    width: 60%;
     flex-wrap: wrap;
     justify-content: space-between;
 }
