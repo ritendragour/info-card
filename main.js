@@ -83,7 +83,7 @@ function subFun(e) {
     // CALL ME BUTTON
     var outputCall = document.createElement('a')
     outputCall.className = 'btn btn-success fa fa-phone'
-    outputCall.setAttribute("href", "tel:" + tel.value + " target=_blank")
+    outputCall.setAttribute("href", "tel:" + tel.value)
     demo.appendChild(outputCall)
 
     
@@ -108,6 +108,14 @@ function subFun(e) {
      outputGoogle.className = 'btn btn-danger'
      outputGoogle.setAttribute("href","https://www.google.com/search?q="+fname.value)
      demo.appendChild(outputGoogle)
+
+    // Date 
+    const date = new Date();
+    let CurrentDate = date.getDate() + "- "+ (date.getMonth()+1)+ "- " + date.getFullYear()
+    let DateMonthYear = document.createElement('span')
+    DateMonthYear.className = 'date'
+    DateMonthYear.innerText = CurrentDate
+    demo.appendChild(DateMonthYear)
 
     //form reset
     form.reset()
