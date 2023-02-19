@@ -6,7 +6,7 @@ let relation = document.getElementById('relation')
 
 //show hide selector
 const ans = document.getElementById('ans')
-const button = document.querySelector('button:nth-child(2)')
+const button = document.querySelector('#clear')
 const container = document.querySelector('#container')
 
 //form tag
