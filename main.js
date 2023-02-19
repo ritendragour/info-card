@@ -23,6 +23,7 @@ function subFun(e) {
     //window stop
     e.preventDefault()
     
+    //info store box (parent div of info and child div of answer(ans))
     let demo = document.createElement('div')
     console.log(demo)
     demo.id = 'infobox'
