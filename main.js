@@ -36,7 +36,6 @@ function subFun(e) {
     var outputID = document.createElement('b')
     outputID.innerText = '\n\nID : ' + (ID + 1)
     outputID.id = ID + 1
-    // outputID.className = 'removebtn '
     demo.appendChild(outputID)
 
     //Cancel Button
