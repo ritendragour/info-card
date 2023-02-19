@@ -22,7 +22,12 @@ function subFun(e) {
 
     //window stop
     e.preventDefault()
-
+    
+    let demo = document.createElement('div')
+    console.log(demo)
+    demo.id = 'infobox'
+    ans.appendChild(demo)
+    
     //count p tag in page
     let ID = document.querySelectorAll('b').length
 
@@ -30,36 +35,36 @@ function subFun(e) {
     var outputID = document.createElement('b')
     outputID.innerText = '\n\nID : ' + (ID + 1)
     outputID.id = ID + 1
-    outputID.className = 'removebtn '
-    ans.appendChild(outputID)
+    // outputID.className = 'removebtn '
+    demo.appendChild(outputID)
 
     //Cancel Button
     var outputbtn = document.createElement('a')
     outputbtn.innerText = 'X'
     outputbtn.className = 'btn btn-danger float-end'
     outputbtn.id = 'removebtn'
-    ans.appendChild(outputbtn)
+    demo.appendChild(outputbtn)
 
     //NAME
     var outputname = document.createElement('p')
     outputname.innerText = "Name : " + fname.value
     localStorage.setItem('name', fname.value)
     outputname.className = 'remove text-padding'
-    ans.appendChild(outputname)
+    demo.appendChild(outputname)
 
     //EMAIL
     var outputemail = document.createElement('p')
     outputemail.innerText = "E-mail : " + email.value
     localStorage.setItem('email', email.value)
     outputemail.className = 'remove text-padding'
-    ans.appendChild(outputemail)
+    demo.appendChild(outputemail)
 
     //MOBILE NUMBER
     var outputTel = document.createElement('p')
     outputTel.innerText = "Mobile number : " + tel.value
     localStorage.setItem('Mobile number', tel.value)
     outputTel.className = 'remove text-padding'
-    ans.appendChild(outputTel)
+    demo.appendChild(outputTel)
 
     //RELATION
     var outputRelation = document.createElement('p')
@@ -73,13 +78,13 @@ function subFun(e) {
 
     localStorage.setItem('Relation', relation.value)
     outputRelation.className = 'remove text-padding'
-    ans.appendChild(outputRelation)
+    demo.appendChild(outputRelation)
 
     // CALL ME BUTTON
     var outputCall = document.createElement('a')
     outputCall.className = 'btn btn-success fa fa-phone'
-    outputCall.setAttribute("href", "tel:" + tel.value)
-    ans.appendChild(outputCall)
+    outputCall.setAttribute("href", "tel:" + tel.value + " target=_blank")
+    demo.appendChild(outputCall)
 
     
     // WHATSAPP ME BUTTON
@@ -87,14 +92,14 @@ function subFun(e) {
     outputWhatsapp.style.marginLeft = '20px'
     outputWhatsapp.className = 'btn btn-success fa fa-whatsapp'
     outputWhatsapp.setAttribute("href", "https://wa.me/" + tel.value)
-    ans.appendChild(outputWhatsapp)
+    demo.appendChild(outputWhatsapp)
 
     // MAIL ME BUTTON
     var outputMail = document.createElement('a')
     outputMail.style.marginLeft = '20px'
     outputMail.className = 'btn btn-danger fa fa-envelope'
     outputMail.setAttribute("href", "mailto:" + email.value)
-    ans.appendChild(outputMail)
+    demo.appendChild(outputMail)
 
      // GOOGLE ME BUTTON
      var outputGoogle = document.createElement('a')
@@ -102,7 +107,7 @@ function subFun(e) {
      outputGoogle.innerText = 'G'
      outputGoogle.className = 'btn btn-danger'
      outputGoogle.setAttribute("href","https://www.google.com/search?q="+fname.value)
-     ans.appendChild(outputGoogle)
+     demo.appendChild(outputGoogle)
 
     //form reset
     form.reset()
@@ -111,7 +116,7 @@ function subFun(e) {
 ans.addEventListener('click', (e) => {
     if (e.target.className.includes("float-end")) {
         let deleteInfo = e.target.parentElement
-        // console.log(deleteInfo)
+        console.log(deleteInfo)
         ans.removeChild(deleteInfo)
     }
 })
@@ -136,7 +141,7 @@ function backgroundImageChange() {
         bg.style.backgroundColor = "none";
         // let bgURl = 'https://source.unsplash.com/random/900×700/?bike'
         bg.style.backgroundImage = "url('https://source.unsplash.com/random/900×700/?bike')";
-        // console.log(bgURl);
+        // console.log(bg.style.backgroundImage);
     }
 }
 
