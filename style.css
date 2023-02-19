@@ -30,7 +30,7 @@
     justify-content: space-between;
 }
 form{
-    width: 40%;
+    width: 45%;
     margin-top: 40px;
 }
 form button{
@@ -44,7 +44,7 @@ h3{
 }
 #ans{
     background-color: rgba(137, 124, 124,0.6);
-    width: 40%;
+    width: 80%;
     outline: 3px solid rgb(215, 215, 208);
     padding: 10px 50px ;
     margin: 20px 0px;
@@ -52,6 +52,7 @@ h3{
 #infobox{
     border: 1px solid black;
     padding: 20px;
+    padding-bottom: 40px;
     margin-top: 5px;
 }
 span{
@@ -61,13 +62,12 @@ span{
 .topLine{
     border-top: 1px solid black;
 }
-.date{
-    display: inline;
-    padding-left: 10px;
-}
 @media (max-width:981px) {
-    img{
-        display: none;
+    form{
+        width: 80%;
+    }
+    .btnSection{
+        width: 100%;
     }
 }
 @media (max-width:800px) {

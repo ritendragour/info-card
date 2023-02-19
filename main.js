@@ -113,8 +113,8 @@ function subFun(e) {
     const date = new Date();
     let CurrentDate = date.getDate() + "- "+ (date.getMonth()+1)+ "- " + date.getFullYear()
     let DateMonthYear = document.createElement('span')
-    DateMonthYear.className = 'date'
-    DateMonthYear.innerText = CurrentDate
+    DateMonthYear.className = 'date float-end'
+    DateMonthYear.innerText = 'DATE : '+CurrentDate
     demo.appendChild(DateMonthYear)
 
     //form reset
