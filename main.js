@@ -84,6 +84,7 @@ function subFun(e) {
     var outputCall = document.createElement('a')
     outputCall.className = 'btn btn-success fa fa-phone'
     outputCall.setAttribute("href", "tel:" + tel.value)
+    outputCall.setAttribute("target", "_blank")
     demo.appendChild(outputCall)
 
     
@@ -92,6 +93,7 @@ function subFun(e) {
     outputWhatsapp.style.marginLeft = '20px'
     outputWhatsapp.className = 'btn btn-success fa fa-whatsapp'
     outputWhatsapp.setAttribute("href", "https://wa.me/" + tel.value)
+    outputWhatsapp.setAttribute("target", "_blank")
     demo.appendChild(outputWhatsapp)
 
     // MAIL ME BUTTON
@@ -99,6 +101,7 @@ function subFun(e) {
     outputMail.style.marginLeft = '20px'
     outputMail.className = 'btn btn-danger fa fa-envelope'
     outputMail.setAttribute("href", "mailto:" + email.value)
+    outputMail.setAttribute("target", "_blank")
     demo.appendChild(outputMail)
 
      // GOOGLE ME BUTTON
@@ -107,6 +110,7 @@ function subFun(e) {
      outputGoogle.innerText = 'G'
      outputGoogle.className = 'btn btn-danger'
      outputGoogle.setAttribute("href","https://www.google.com/search?q="+fname.value)
+     outputGoogle.setAttribute("target", "_blank")
      demo.appendChild(outputGoogle)
 
     // Date 
