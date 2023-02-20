@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Info card</title>
 </head>
+
 <body>
     <div class="main">
         <h1 class="text-center pt-5 pb-2"><u>Info Card</u></h1>
@@ -19,19 +20,49 @@
                 <button class="btn btn-primary" onclick="backgroundColorChange()">BG Color</button>
                 <button class="btn btn-primary" onclick="backgroundImageChange()">BG Image</button>
                 <button class="btn btn-primary" onclick="fontColorChange()">Font Color</button>
-                <button class="btn btn-primary" onclick="fontDesignChange()">Font Design</button>
                 <button class="btn btn-primary" onclick="fontColorSize()">Font Size</button>
+                <button class="btn btn-primary" onclick="fontDesignChange()">Font Design</button>
                 <button class="btn btn-primary" onclick="clearFun()">Page Clear</button>
+                <!-- <button onclick="dark()" class="btn btn-primary">Dark</button>
+                <button onclick="light()" class="btn btn-primary">Light</button> -->
             </div>
+            <span class="timeZoneBox">
+                <span class="timeZone">
+                    <button>London</button>
+                    <iframe
+                        src="https://free.timeanddate.com/clock/i8qagbhl/n85/szw110/szh110/hoc000/hbw0/hfc09f/cf100/hnc07c/hwc000/facfff/fnu2/fdi76/mqcfff/mqs4/mql18/mqw4/mqd60/mhcfff/mhs4/mhl5/mhw4/mhd62/mmv0/hhcfff/hhs1/hhb10/hmcfff/hms1/hmb10/hscfff/hsw3"
+                        frameborder="0" width="110" height="110"></iframe>
+
+                    <iframe src="https://free.timeanddate.com/clock/i8qag6nk/n85" frameborder="0" width="113"
+                        height="19"></iframe>
+                </span>
+                <span class="timeZone"> 
+                    <button>India</button><iframe
+                        src="https://free.timeanddate.com/clock/i8qafl9f/n1833/szw110/szh110/hoc009/hbw0/hfc9ff/cf100/hnc0f9/hwc000/fan2/fas16/fac555/fdi60/mqcf0f/mqs4/mql2/mqw4/mqd78/mhcf90/mhs4/mhl3/mhw4/mhd78/mmv0/hhc990/hhs2/hmc990/hms2/hscf09"
+                        frameborder="0" width="110" height="110"></iframe>
+                    <iframe src="https://free.timeanddate.com/clock/i8qaftan/n1833" frameborder="0" width="113"
+                        height="19"></iframe>
+                </span>
+                <span class="timeZone">
+                    <button>America</button>
+                    <iframe
+                        src="https://free.timeanddate.com/clock/i8qagdbc/n179/szw110/szh110/hoc00f/hbw0/hfc000/cf100/hgr0/facf90/mqcfff/mql6/mqw2/mqd74/mhcfff/mhl6/mhw1/mhd74/mmcf90/mml4/mmw1/mmd74/hhcfff/hmcfff"
+                        frameborder="0" width="110" height="110"></iframe>
+                    <iframe src="https://free.timeanddate.com/clock/i8qagjav/n179" frameborder="0" width="113"
+                        height="19"></iframe>
+
+                </span>
+            </span>
             <form action="submit.php" method="post">
                 <label for="fname" id="label">Full name</label>
-                <input type="text" id="fname" class="form-control" minlength="9" maxlength="20">
+                <input type="text" id="fname" class="form-control" minlength="9" maxlength="20"
+                    placeholder="Enter Full Name">
 
                 <label for="email" id="label">E- Mail</label>
-                <input type="email" id="email" class="form-control" minlength="10">
+                <input type="email" id="email" class="form-control" minlength="10" placeholder="Enter Email">
 
                 <label for="tel" id="label">Mobile number</label>
-                <input type="tel" id="tel" class="form-control" maxlength="10">
+                <input type="tel" id="tel" class="form-control" maxlength="10" placeholder="Enter Mobile number">
 
                 <label for="relation" id="label">Relation</label>
                 <select id="relation" class="form-control">
@@ -43,8 +74,8 @@
                 </select>
                 <span>
                     <button type="submit" class="btn btn-primary mt-2 btn-lg">Add</button>
-                    <button class="btn btn-primary mt-2 btn-lg" onclick="clearFun()"
-                         id="clear" style="display: none">Clear</button>
+                    <button class="btn btn-primary mt-2 btn-lg" onclick="clearFun()" id="clear"
+                        style="display: none">Clear</button>
                 </span>
             </form>
             <div id="ans" style="display: none;">

@@ -176,3 +176,16 @@ function clearFun() {
     alert('Now page is Clear')
     location.reload()
 }
+
+// // Dark Mode
+// function dark(){
+//     bg.style.backgroundImage = 'none'
+//     bg.style.color = 'white'
+//     bg.style.backgroundColor = 'black'
+// }
+// // White Mode
+// function light(){
+//     bg.style.backgroundImage = 'none'
+//     bg.style.color = 'black'
+//     bg.style.backgroundColor = 'white'
+// }
