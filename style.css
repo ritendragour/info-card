@@ -82,6 +82,9 @@ span{
     .btnSection{
         width: 100%;
     }
+    .timeZoneBox{
+        width: 80%;
+    }
 }
 @media (max-width:800px) {
   #ans{
@@ -100,4 +103,8 @@ span{
         width: 100%;
         padding: 20px;
     }
+    .timeZoneBox{
+       display: none;
+    }
+    
 }
